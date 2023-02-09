@@ -63,6 +63,7 @@ a {
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .purple {
   color: purple;
@@ -114,6 +115,10 @@ footer {
   #circular-image {
     margin: 50px;
     border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .ul-edit {
     list-style-type: none;
@@ -133,6 +138,12 @@ footer {
     cursor: pointer;
     text-decoration: none;
   }
+  #content-container {
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   #middle-content {
     flex: 1;
     display: flex;
@@ -140,8 +151,7 @@ footer {
     flex-direction: column;
   }
   .progress-bar {
-    width: 50%;
-    height: 9%;
+    width: 200px;
   }
   .button {
     background-color: #a000c8;
@@ -155,8 +165,9 @@ footer {
   #leftside {
     background: white;
     flex: 0 0 20%;
-    border-right: 0.1px solid grey;
+    border-bottom: 0.1px solid grey;
     width: 120%;
+    text-align: center;
   }
   /*------------------------------------------*/
   /*rightside or main-content area*/
