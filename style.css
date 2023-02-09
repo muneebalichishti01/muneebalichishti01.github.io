@@ -145,7 +145,8 @@ footer {
     flex-direction: column;
   }
   .progress-bar {
-    width: 200px;
+    width: 350px;
+    height: 25px;
   }
   .button {
     background-color: #a000c8;
