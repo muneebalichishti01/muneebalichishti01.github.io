@@ -40,7 +40,7 @@ a {
   display: flex;
   background: white;
   border-top: 1px solid grey;
-  min-height: 700px;
+  min-height: 500px;
   padding: 15px;
 }
 /*------------------------------------------*/
@@ -55,7 +55,7 @@ a {
 #name {
   color: #616161;
 }
-#circular-image {
+img#circular-image {
   margin: 50px;
   width: 240px;
   height: 300px;
@@ -64,7 +64,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
+  }
 .purple {
   color: purple;
 }
@@ -80,12 +80,10 @@ a {
   margin: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
 }
 .progress-bar {
-  width: 50%;
-  height: 9%;
+  width: 400px;
 }
 .button {
   background-color: #a000c8;
@@ -112,19 +110,15 @@ footer {
     font-family: Gill Sans MT, sans-serif;
   }
   /*------------------------------------------*/
-  #circular-image {
-    margin: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  img#circular-image {
+  width: 240px;
+  height: 300px;
+  border-radius: 50%;
   }
   .ul-edit {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    font-weight: bold;
   }
   /*------------------------------------------*/
   a:hover {
@@ -156,23 +150,25 @@ footer {
   .button {
     background-color: #a000c8;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     border: none;
   }
   /*------------------------------------------*/
   /*leftside or image & info area*/
   #leftside {
-    background: white;
-    flex: 0 0 20%;
-    border-bottom: 0.1px solid grey;
+    border-right: none;
     width: 120%;
     text-align: center;
+    flex-direction: row;
   }
   /*------------------------------------------*/
   /*rightside or main-content area*/
+  #main-content {
+    border-top: 0.1px solid grey;
+  }
   #message {
     height: 200px;
-    width: 270px;
+    width: 300px;
   }
 }
