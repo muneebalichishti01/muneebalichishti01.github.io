@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  color: #757575;
+  font-family: Gill Sans MT, sans-serif;
+}
+.strip {
+  list-style-type: none;
+  border-top: 2px solid #a000c8;
+}
+.header-menu {
+  background: white;
+}
+.ul-edit {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+a:hover {
+  color: purple;
+}
+#current-page {
+  color: #a000c8;
+}
+a {
+  color: grey;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*------------------------------------------*/
+#content-container {
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/*------------------------------------------*/
+#middle-content {
+  flex: 1;
+  display: flex;
+  background: white;
+  border-top: 1px solid grey;
+  min-height: 700px;
+  padding: 15px;
+}
+/*------------------------------------------*/
+/*leftside or image & info area*/
+#leftside {
+  background: white;
+  flex: 0 0 20%;
+  border-right: 0.1px solid grey;
+  width: 55%;
+  text-align: center;
+}
+#name {
+  color: #616161;
+}
+#circular-image {
+  margin: 50px;
+  width: 240px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.purple {
+  color: purple;
+}
+.dark {
+  color: #424242;
+  font-weight: bold;
+}
+/*------------------------------------------*/
+/*rightside or main-content area*/
+#main-content {
+  background: white;
+  flex: 1;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.progress-bar {
+  width: 50%;
+  height: 9%;
+}
+.button {
+  background-color: #a000c8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+/*------------------------------------------*/
+footer {
+  border-top: 1px solid grey;
+  position: absolute;
+  bottom: 30;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+/*------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0;
+    color: #757575;
+    font-family: Gill Sans MT, sans-serif;
+  }
+  /*------------------------------------------*/
+  #circular-image {
+    margin: 50px;
+    border-radius: 50%;
+  }
+  .ul-edit {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+  /*------------------------------------------*/
+  a:hover {
+    color: purple;
+  }
+  #current-page {
+    color: #a000c8;
+  }
+  a {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #middle-content {
+    flex: 1;
+    display: flex;
+    background: white;
+    flex-direction: column;
+  }
+  .progress-bar {
+    width: 50%;
+    height: 9%;
+  }
+  .button {
+    background-color: #a000c8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  /*------------------------------------------*/
+  /*leftside or image & info area*/
+  #leftside {
+    background: white;
+    flex: 0 0 20%;
+    border-right: 0.1px solid grey;
+    width: 120%;
+  }
+  /*------------------------------------------*/
+  /*rightside or main-content area*/
+  #message {
+    height: 200px;
+    width: 270px;
+  }
+}
