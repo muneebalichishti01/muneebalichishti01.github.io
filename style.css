@@ -54,11 +54,12 @@ a {
 }
 #name {
   color: #616161;
+  font-size: 25px;
 }
 img#circular-image {
   margin: 50px;
-  width: 240px;
-  height: 300px;
+  width: 200px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   align-items: center;
@@ -103,7 +104,7 @@ footer {
   font-size: 15px;
 }
 /*------------------------------------------*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   body {
     margin: 0;
     color: #757575;
@@ -111,22 +112,18 @@ footer {
   }
   /*------------------------------------------*/
   img#circular-image {
-  width: 240px;
-  height: 300px;
+  width: 150px;
+  height: 180px;
   border-radius: 50%;
   }
   .ul-edit {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    font-size: 14px
   }
   /*------------------------------------------*/
-  a:hover {
-    color: purple;
-  }
-  #current-page {
-    color: #a000c8;
-  }
   a {
     color: grey;
     cursor: pointer;
@@ -162,6 +159,9 @@ footer {
     width: 120%;
     text-align: center;
     flex-direction: row;
+  }
+  #name{
+    font-size: 23px
   }
   /*------------------------------------------*/
   /*rightside or main-content area*/
